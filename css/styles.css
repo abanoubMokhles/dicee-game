@@ -1,0 +1,70 @@
+/*  General Styles
+----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat+Alternates:wght@300&display=swap");
+*::selection {
+  background-color: #ff1b6bff;
+  color: #fff;
+}
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: linear-gradient(to bottom right, #ff1b6bff, #45caffff) no-repeat
+    center center/cover;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Monoton", cursive;
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 7px 0 #232931;
+  letter-spacing: 5px;
+  margin: 0.2rem 0;
+}
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 10% 15%;
+}
+/*  Parent Styles
+----------------------*/
+.parent {
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.col {
+  float: left;
+  width: 50%;
+}
+img {
+  width: 50%;
+}
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/*  Responsive Styles
+----------------------*/
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+    padding: 10%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  img {
+    width: 70%;
+  }
+}
